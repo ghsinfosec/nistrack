@@ -15,7 +15,7 @@ $functionsHTML = "<div class='nist-functions'>";
 while ($func = $functions->fetchObject()) {
 	$functionsHTML .= "
 		<article class='functions'>
-			<h1>$func->function_name</h1>
+			<h2>$func->function_name</h1>
 			<p>$func->function_description</p>
 		</article>
 		";
