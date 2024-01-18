@@ -13,19 +13,18 @@ $pageData->title = "NISTrack";
 $pageData->addCSS("css/style.css");
 $pageData->content = include_once "views/navigation.php";
 
-// get the page that was clicked in the navbar
-$navLinkClicked = isset($_GET['page']);
-if ($navLinkClicked) {
-	// set the clicked page
-	$loadPage = $_GET['page'];
-} else {
-	// default landing page
-	$loadPage = "about";
-}
+// setup the database info needed to show functions data
+$dbInfo = "mysql:host=localhost;dbname=nistrack";
+$dbUser = getenv('MYSQL_DBUSER', true);
+$dbPass = getenv('MYSQL_DBPASS', true);
 
-// show the clicked page
-$pageData->content .= include_once "views/$loadPage.php";
+$db = new PDO($dbInfo, $dbUser, $dbPass);
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$pageData->content .= include_once "views/about.php";
+$pageData->content .= include_once "controllers/functions.php";
 
 // require the page view layout/template and show it
 $page = require "views/page.php";
+
 echo $page;
