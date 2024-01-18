@@ -1,0 +1,23 @@
+body {
+	background: #eee;
+	color: #3b3b3b;
+	font-family: sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	background: #bebebe;
+	height: 72px;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	padding: 0, 16px;
+}
+
+a {
+	color: #3b3b3b;
+	text-decoration: none;
+}
