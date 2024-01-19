@@ -1,7 +1,7 @@
 body {
 	background: #fff;
-	color: #3b3b3b;
-	font-family: sans-serif;
+	color: #f9faf8;
+	font-family:  "Segoe UI", Roboto, Oxygen, "Open Sans", "Helvetica Neue", sans-serif;
 	min-height: 100vh;
 	margin: 0;
 	display: flex;
@@ -9,24 +9,89 @@ body {
 }
 
 nav {
-	background: #bebebe;
+	background: #1f2937;
 	height: 72px;
 	font-size: 24px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 0, 16px;
+	padding: 0 24px;
 }
 
 a {
-	color: #3b3b3b;
+	color: #e5e7eb;
 	text-decoration: none;
 	padding: 10px;
 }
 
-.container {
+.hero {
+	background: #1f2937;
 	display: flex;
+	flex: 1;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 4rem;
+	padding: 8rem;
+}
+
+.hero-section {
+	color: #f9faf8;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-title {
+	flex-flow: row wrap;
+	font-weight: 900;
+	font-size: 48px;
+}
+
+.hero-text {
+	font-size: 18px;
+	max-width: 400px;
+}
+
+.hero-image {
+	display: flex;
+	flex-shrink: 0;
+	min-width: 475px;
+}
+
+.information {
+	color: #1f2937;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.info-title {
+	font-size: 36px;
+	font-weight: 900;
+	padding: 2rem;
+}
+
+.info-container {
+	display: flex;
+	flex: 1;
+	flex-flow: column wrap;
+	max-width: 60%;
+	text-align: left;
+	padding: 0 2rem 2rem;
+}
+
+.card-container {
+	display: flex;
+	flex: 1;
 	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding: 0 2rem 2rem;
 }
 
 .card {
@@ -36,4 +101,5 @@ a {
 	width: 300px;
 	margin: 16px;
 	padding: 16px;
+	text-align: left;
 }
