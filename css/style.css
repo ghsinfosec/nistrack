@@ -19,6 +19,10 @@ nav {
 }
 
 a {
+	text-decoration: underline;
+}
+
+.header-links {
 	color: #e5e7eb;
 	text-decoration: none;
 	padding: 10px;
@@ -85,6 +89,10 @@ a {
 	padding: 0 2rem 2rem;
 }
 
+.quote-text {
+	font-style: italic;
+}
+
 .card-container {
 	display: flex;
 	flex: 1;
@@ -95,11 +103,29 @@ a {
 }
 
 .card {
+	background: #3882f6;
+	color: #f9faf8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: 1px solid #bbb;
 	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.6);
 	border-radius: 4px;
-	width: 300px;
+	width: 150px;
+	height: 150px;
 	margin: 16px;
 	padding: 16px;
-	text-align: left;
+	/* text-align: left; */
+	transition: transform 250ms ease-out;
+}
+
+.card-title {
+	font-size: 24px;
+	text-align: center;
+}
+
+.card:hover {
+	transform: scale(1.07);
+	background: #e5e7eb;
+	color: #1f2937;
 }
