@@ -9,15 +9,15 @@ if ($functionsFound === false) {
 }
 
 // create a div to show functions
-$functionsHTML = "<div class='nist-functions'>";
+$functionsHTML = "<div class='container'>";
 
 // create an article element for each function returned
 while ($func = $functions->fetchObject()) {
 	$functionsHTML .= "
-		<article class='functions'>
+		<div class='card'>
 			<h2>$func->function_name</h2>
 			<p>$func->function_description</p>
-		</article>
+		</div>
 		";
 }
 
