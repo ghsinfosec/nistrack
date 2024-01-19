@@ -21,7 +21,6 @@ $dbPass = getenv('MYSQL_DBPASS', true);
 $db = new PDO($dbInfo, $dbUser, $dbPass);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$pageData->content .= include_once "views/about.php";
 $pageData->content .= include_once "controllers/functions.php";
 
 // require the page view layout/template and show it
