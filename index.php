@@ -10,8 +10,9 @@ include_once "models/PageData.class.php";
 // set properties for a new PageData object
 $pageData = new PageData();
 $pageData->title = "NISTrack";
-$pageData->addCSS("css/style.css");
 $pageData->content = include_once "views/navigation.php";
+$pageData->addCSS('css/style.css');
+$pageData->addScript('js/cardbox.js');
 
 // setup the database info needed to show functions data
 $dbInfo = "mysql:host=localhost;dbname=nistrack";

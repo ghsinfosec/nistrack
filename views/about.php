@@ -10,6 +10,20 @@
  */
 
 return "
-<h1>About NISTrack</h1>
-<p>NISTrack is a work-in-progress at the moment...</p>
+<section class='hero'>
+	<div class='hero-section'>
+		<span class='hero-title'>NISTrack</span>
+		<span class='hero-text'>
+			<p>
+				Keep track of your organization's progress in
+				maintaining a cybersecurity program that is consistent
+				with the NIST-CSF.
+			</p>
+		</span>
+	</div>
+	<div class='hero-image'>
+		<!-- image source: https://www.nist.gov/libraries/nist-component-library/dist/img/logo/NIST-Logo-Brand-White.svg -->
+		<img src='images/NIST-Logo-Brand-White.svg' alt='NIST-Logo' />
+	</div>
+</section>
 ";
