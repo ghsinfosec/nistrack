@@ -6,3 +6,11 @@ Use the Implementation Tiers to determine your Current Profile (i.e. what you're
 There are a lot of resources for NIST-CSF on [their website](https://nist.gov/cyberframework). NISTrack is not a replacement for any of those resources! So don't skip out on these resources!
 
 This README will be updated as I build it. I'm starting the whole project from zero with no developer experience, so this should be fun...
+
+## Todo
+
+- [ ] Fix definition display
+- [ ] Authenticated "dashboard" area
+- [ ] Login/auth mechanism
+
+More will be added as I think of things.
