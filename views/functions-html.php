@@ -42,4 +42,17 @@ $functionsHTML .= "<div class='overlay hidden'></div>";
 $functionsHTML .= "</div>";
 $functionsHTML .= "</section>";
 
+$functionsHTML .= "<section class='quote'>
+	<div class='quote-section'>
+		<div class='quote-container'>
+			<div class='quote-text'>
+				The cybersecurity framework allows organizations—regardless of size, degree of cyber risk, or cybersecurity sophistication—to apply the principles and best practices of risk management to improve the security and resilience of critical infrastructure. Organizations can use the framework to determine their current level of cybersecurity, set goals for cybersecurity that are in sync with their business environment, and establish a plan for improving or maintaining their cybersecurity. The cybersecurity framework also offers a methodology to protect privacy and civil liberties to help organizations incorporate those protections into a comprehensive cybersecurity program.
+			</div>
+			<div class='quote-author'>-Federal Cybersecurity Programs: A Resource Guide, National Governors Association, October 2014</div>
+			<div class='quote-subtext'>From <a href='https://www.nist.gov/cyberframework/state-local-tribal-and-territorial-perspectives'>perspectives</a> on the NIST website</div>
+		</div>
+	</div>
+</section>
+";
+
 return $functionsHTML;
