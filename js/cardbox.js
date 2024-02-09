@@ -1,23 +1,35 @@
 // cardbox.js - create a "lightbox"-like effect when clicking on card elements
 
 const cards = document.querySelectorAll('.card');
-const cardContent = document.querySelectorAll('.card-content');
+const modals = document.querySelectorAll('.modal');
+const overlay = document.querySelector('.overlay');
+const closeModalBtns = document.querySelectorAll('.btn-close');
 
-cardContent.forEach((content) => {
-	content.style.display = "none";
-})
+const openModal = (modal) => {
+	modal.classList.remove('hidden');
+	overlay.classList.remove('hidden');
+}
 
-cards.forEach((card) => {
+const closeModal = (modal) => {
+	modal.classList.add('hidden');
+	overlay.classList.add('hidden');
+}
+
+cards.forEach((card, index) => {
 	card.addEventListener('click', () => {
-		let cardContent = card.querySelector('.card-content');
+		openModal(modals[index]);
+		});
+});
 
-		card.classList.toggle('card-clicked');
-		card.classList.toggle('card');
-
-		if (cardContent.style.display === "block") {
-			cardContent.style.display = "none";
-		} else {
-			cardContent.style.display = "block";
-		}
+closeModalBtns.forEach((btn, index) => {
+	btn.addEventListener('click', () => {
+		closeModal(modals[index]);
 	});
 });
+
+overlay.addEventListener('click', () => {
+	modals.forEach(modal => {
+		closeModal(modal);
+	});
+});
+
