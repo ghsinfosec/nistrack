@@ -31,7 +31,7 @@ a {
 	padding: 1.3rem;
 	min-height: 300px;
 	position: absolute;
-	top: 20%;
+	top: 50%;
 	background: #e5e7eb;
 	color: #1f2937;
 	border: 1px solid #888;
@@ -94,6 +94,15 @@ button {
 	padding: 8rem;
 }
 
+.footer {
+	background: #1f2937;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
 .hero-section {
 	color: #f9faf8;
 	display: flex;
@@ -136,7 +145,7 @@ button {
 	padding: 4rem 2rem 2rem;
 }
 
-.info-container {
+.info-container{
 	display: flex;
 	flex: 1;
 	flex-flow: column wrap;
@@ -145,8 +154,39 @@ button {
 	padding: 0 4rem 4rem;
 }
 
+.quote {
+	background-color: #e5e7eb;
+	color: #1f2937;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 8rem;
+}
+
+.quote-container {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 70%;
+	text-align: left;
+	padding: 3rem 16rem;
+}
+
 .quote-text {
 	font-style: italic;
+}
+
+.quote-subtext {
+	font-size: 10px;
+	text-align: right;
+}
+
+.quote-author {
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	justify-content: flex-end;
+	padding: 2rem;
 }
 
 .card-container {
