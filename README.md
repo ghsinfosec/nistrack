@@ -9,7 +9,7 @@ This README will be updated as I build it. I'm starting the whole project from z
 
 ## Todo
 
-- [ ] Fix definition display
+- [x] Fix definition display on main page
 - [ ] Authenticated "dashboard" area
 - [ ] Login/auth mechanism
 
