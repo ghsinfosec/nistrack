@@ -22,6 +22,66 @@ a {
 	text-decoration: underline;
 }
 
+.modal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.4rem;
+	width: 500px;
+	padding: 1.3rem;
+	min-height: 300px;
+	position: absolute;
+	top: 20%;
+	background: #e5e7eb;
+	color: #1f2937;
+	border: 1px solid #888;
+	border-radius: 15px;
+	z-index: 2;
+}
+
+.modal .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modal p {
+	font-size: 0.9rem;
+	color: #777;
+	margin: 0.4rem 0 0.2rem;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	font-weight: 600;
+}
+
+.btn-close {
+	transform: translate(460px, -40px);
+	padding: 0.5rem 0.8rem;
+	background: white;
+	border-radius: 50%;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(2px);
+	z-index: 1;
+
+}
+
+.hidden {
+	display: none;
+}
+
 .header-links {
 	color: #e5e7eb;
 	text-decoration: none;
@@ -115,7 +175,6 @@ a {
 	height: 150px;
 	margin: 16px;
 	padding: 16px;
-	/* text-align: left; */
 	transition: transform 250ms ease-out;
 }
 
@@ -128,16 +187,4 @@ a {
 	transform: scale(1.07);
 	background: #e5e7eb;
 	color: #1f2937;
-}
-
-.card-clicked {
-	position: absolute;
-	transform: translateY(-500px);
-	background: #e5e7eb;
-	color: #1f2937;
-	width: 75%;
-	height: 40%;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
 }
