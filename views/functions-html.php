@@ -23,16 +23,22 @@ $functionsHTML .= "<div class='info-container'>
 	</div>";
 $functionsHTML .= "<div class='card-container'>";
 
-// create an article element for each function returned
+// create a hidden article element for each function returned
 while ($func = $functions->fetchObject()) {
 	$functionsHTML .= "
 		<div id='$func->function_name' class='card'>
 			<span class='card-title'>$func->function_name</span>
-			<p class='card-content'>$func->function_description</p>
 		</div>
+		<article class='modal hidden'>
+			<div class='flex'>
+				<span class='card-title'>$func->function_name</span>
+				<p>$func->function_description</p>
+			</div>
+		</article>
 		";
 }
 
+$functionsHTML .= "<div class='overlay hidden'></div>";
 $functionsHTML .= "</div>";
 $functionsHTML .= "</section>";
 
