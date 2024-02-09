@@ -23,6 +23,7 @@ $db = new PDO($dbInfo, $dbUser, $dbPass);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $pageData->content .= include_once "controllers/functions.php";
+$pageData->content .= include_once "views/footer.php";
 
 // require the page view layout/template and show it
 $page = require "views/page.php";
