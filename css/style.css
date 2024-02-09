@@ -41,6 +41,7 @@ a {
 
 .modal .flex {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -49,19 +50,14 @@ a {
 	font-size: 0.9rem;
 	color: #777;
 	margin: 0.4rem 0 0.2rem;
+	padding: 1.3rem;
+	text-align: left;
 }
 
 button {
 	cursor: pointer;
 	border: none;
 	font-weight: 600;
-}
-
-.btn-close {
-	transform: translate(460px, -40px);
-	padding: 0.5rem 0.8rem;
-	background: white;
-	border-radius: 50%;
 }
 
 .overlay {
