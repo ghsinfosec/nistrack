@@ -3,7 +3,6 @@
 const cards = document.querySelectorAll('.card');
 const modals = document.querySelectorAll('.modal');
 const overlay = document.querySelector('.overlay');
-const closeModalBtns = document.querySelectorAll('.btn-close');
 
 const openModal = (modal) => {
 	modal.classList.remove('hidden');
@@ -19,12 +18,6 @@ cards.forEach((card, index) => {
 	card.addEventListener('click', () => {
 		openModal(modals[index]);
 		});
-});
-
-closeModalBtns.forEach((btn, index) => {
-	btn.addEventListener('click', () => {
-		closeModal(modals[index]);
-	});
 });
 
 overlay.addEventListener('click', () => {
