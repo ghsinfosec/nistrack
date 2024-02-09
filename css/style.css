@@ -133,7 +133,7 @@ button {
 .info-title {
 	font-size: 36px;
 	font-weight: 900;
-	padding: 2rem;
+	padding: 4rem 2rem 2rem;
 }
 
 .info-container {
@@ -142,7 +142,7 @@ button {
 	flex-flow: column wrap;
 	max-width: 60%;
 	text-align: left;
-	padding: 0 2rem 2rem;
+	padding: 0 4rem 4rem;
 }
 
 .quote-text {
@@ -155,7 +155,7 @@ button {
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-	padding: 0 2rem 2rem;
+	padding: 0 4rem 4rem;
 }
 
 .card {
